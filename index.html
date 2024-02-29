@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ping.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="Screenshot_2024-02-29_012739-removebg-preview.png" height="100px" width="200px">
+        <div class="container glass" id="center-div">
+            <h2 id="pops">The best math game so far</h2>
+
+            <div id="iop">
+                <form action="nive.html" id="form">
+                    <label id="namem" class="poppin">Name </label>
+                    <br>
+                    <br>
+
+                    <input type="text" id="name" class="pinks">
+                    <br>
+                    <br>
+                    <br>
+                    <label id="ages" class="poppin">Age </label>
+                    <br>
+                    <br>
+                    <input type="date" id="age" class="pinks">
+                    <br>
+                    <br>
+                    <input type="submit" name="Submit" class="pinks" id="button">
+                </form>
+            </div>
+
+</body>
+</div>
+</div>
+<script>
+    let names = document.getElementById("name")
+    let age = document.getElementById("age")
+    let forms = document.getElementById("form")
+    forms.addEventListener("submit", function () {
+        localStorage.setItem("name", names.value)
+        localStorage.setItem("age", age.value)
+    })
+</script>
+
+</html>
